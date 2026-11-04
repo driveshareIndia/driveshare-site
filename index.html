@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DriveShare - a self-drive car rental marketplace connecting vehicle owners and renters in Delhi NCR.">
+  <title>DriveShare | Your Car. Your Journey. Your Freedom.</title>
+  <style>
+    :root {
+      --navy: #0d284d;
+      --teal: #20b49e;
+      --light: #f4f8fa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--navy);
+      line-height: 1.6;
+    }
+    header {
+      padding: 18px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .logo { font-size: 27px; font-weight: 800; }
+    .logo span { color: var(--teal); }
+    a { color: inherit; }
+    nav a { margin-left: 15px; text-decoration: none; }
+    .hero {
+      background: linear-gradient(130deg, #071a34, #174e64);
+      color: white;
+      padding: 95px 8%;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(34px, 5vw, 60px);
+      line-height: 1.15;
+      margin: 0 auto 22px;
+      max-width: 850px;
+    }
+    .hero p { max-width: 680px; margin: auto; font-size: 18px; }
+    .btn {
+      display: inline-block;
+      background: var(--teal);
+      color: #061c2f;
+      padding: 13px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 25px 6px 0;
+    }
+    .btn.secondary {
+      background: transparent;
+      color: white;
+      border: 1px solid white;
+    }
+    section { padding: 65px 8%; text-align: center; }
+    section h2 { font-size: 32px; margin-top: 0; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      max-width: 1000px;
+      margin: 30px auto 0;
+    }
+    .card {
+      background: var(--light);
+      padding: 30px;
+      border-radius: 14px;
+      text-align: left;
+    }
+    .card h3 { font-size: 24px; margin-top: 0; }
+    .features { background: #f7fafc; }
+    .features .cards { grid-template-columns: repeat(3, 1fr); }
+    .contact { background: var(--navy); color: white; }
+    .contact a { color: #5be0cc; }
+    footer {
+      background: #07182e;
+      color: #d5e3ee;
+      text-align: center;
+      padding: 22px;
+      font-size: 14px;
+    }
+    @media (max-width: 650px) {
+      header { flex-direction: column; }
+      nav a { margin: 0 8px; }
+      .cards, .features .cards { grid-template-columns: 1fr; }
+      section { padding: 45px 6%; }
+      .hero { padding: 75px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Drive<span>Share</span></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#how">How It Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Your Car. Your Journey. Your Freedom.</h1>
+      <p>
+        A smarter self-drive car rental marketplace.
+        Rent a car for your next adventure or list your
+        eligible vehicle to unlock earning opportunities.
+      </p>
+      <a class="btn" href="mailto:driveshareindia@gmail.com?subject=DriveShare%20Rental%20Enquiry">Rent a Car</a>
+      <a class="btn secondary" href="mailto:driveshareindia@gmail.com?subject=DriveShare%20Vehicle%20Listing%20Enquiry">List Your Car</a>
+      <p style="margin-top:25px;font-size:14px">Coming Soon | Delhi NCR</p>
+    </div>
+
+    <section id="about">
+      <h2>Welcome to DriveShare</h2>
+      <p>
+        DriveShare is building a platform that connects
+        vehicle owners with people looking for convenient
+        self-drive car rentals. Our vision is to create
+        a fairer, more transparent marketplace for everyone.
+      </p>
+    </section>
+
+    <section id="how">
+      <h2>One Platform. Two Possibilities.</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>🚘 Rent a Car</h3>
+          <p>
+            Looking for a vehicle for a weekend getaway,
+            family trip, or everyday journey?
+            DriveShare aims to make finding self-drive
+            rental options simpler and more convenient.
+          </p>
+        </div>
+        <div class="card">
+          <h3>🔑 List Your Vehicle</h3>
+          <p>
+            Have an eligible vehicle? Join our upcoming
+            marketplace and explore opportunities to earn
+            with competitive commissions and transparent terms.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Why DriveShare?</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Lower Commission Focus</h3>
+          <p>Building a more rewarding model for vehicle owners.</p>
+        </div>
+        <div class="card">
+          <h3>Transparent Approach</h3>
+          <p>Clearer pricing, policies, and platform terms.</p>
+        </div>
+        <div class="card">
+          <h3>Service First</h3>
+          <p>A better rental experience is at the heart of our vision.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get in Touch</h2>
+      <p>Interested in renting or listing your vehicle?</p>
+      <p>Email:
+        <a href="mailto:driveshareindia@gmail.com">
+          driveshareindia@gmail.com
+        </a>
+      </p>
+      <p>Instagram:
+        <a href="https://www.instagram.com/drive__share/"
+           target="_blank" rel="noopener noreferrer">
+          @drive__share
+        </a>
+      </p>
+      <p>📍 Delhi NCR, India</p>
+      <p>We're preparing for launch. Rental and listing
+         services are not yet available through this website.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 DriveShare. All rights reserved.
+  </footer>
+</body>
+</html>
